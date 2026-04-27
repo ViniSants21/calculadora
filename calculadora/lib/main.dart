@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Calculadora SENAI',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
@@ -139,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Calculadora SENAI'),
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 133, 193, 243),
       ),
       body: Column(
         children: [
@@ -147,14 +148,14 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(20),
-            color: Colors.grey[900],
+            color: const Color.fromARGB(255, 226, 226,-226),
             child: Text(
               _display,
               textAlign: TextAlign.right,
               style: const TextStyle(
                 fontSize: 48,
                 fontWeight: FontWeight.bold,
-                color: Colors.white,
+                color: Color.fromARGB(255, 0, 0, 0),
               ),
             ),
           ),
