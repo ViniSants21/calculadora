@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(20),
-            color: const Color.fromARGB(255, 226, 226,-226),
+            color: const Color.fromARGB(255, 229, 229, 229),
             child: Text(
               _display,
               textAlign: TextAlign.right,
