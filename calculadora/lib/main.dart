@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Calculadora SENAI',
+      title: 'Calculadora',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
@@ -174,13 +174,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             corFundo: Colors.red[300]),
                         _botao('/',
                             onPressed: () => _pressionarOperacao('/'),
-                            corFundo: Colors.orange[300]),
+                            corFundo: Colors.blue[300]),
                         _botao('*',
                             onPressed: () => _pressionarOperacao('*'),
-                            corFundo: Colors.orange[300]),
+                            corFundo: Colors.blue[300]),
                         _botao('-',
                             onPressed: () => _pressionarOperacao('-'),
-                            corFundo: Colors.orange[300]),
+                            corFundo: Colors.blue[300]),
                       ],
                     ),
                     // Row 2: 7, 8, 9, +
@@ -191,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         _botao('9', onPressed: () => _pressionarNumero('9')),
                         _botao('+',
                             onPressed: () => _pressionarOperacao('+'),
-                            corFundo: Colors.orange[300]),
+                            corFundo: Colors.blue[300]),
                       ],
                     ),
                     // Row 3: 4, 5, 6
@@ -243,7 +243,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             corFundo: Colors.grey[300]),
                         _botao('=',
                             onPressed: _calcular,
-                            corFundo: Colors.green[300]),
+                            corFundo: Colors.green[400]),
                       ],
                     ),
                   ],
